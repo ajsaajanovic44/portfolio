@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="blog.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Allura&family=Great+Vibes&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Allura&family=Great+Vibes&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <title>Document</title>
+</head>
+<body>
+        <header class="glavnimeni">
+    <a href="mailto:ajsaajanovic44@gmail.com" class="mail">
+    <span class="mailikonica">
+        <i class="fa-solid fa-envelope"></i></span>
+    <span class="textemail">ajsa.ajanovic</span>
+   </a>
+   <div class="hamburger" id="hamburger">
+    <i class="fa-solid fa-bars"></i>
+  </div>  
+<nav class="meni">
+<ul class="items">
+    <li><a href="POCETNA.html">Početna</a></li>
+    <li><a href="omeni.html">O meni</a></li>
+    <li class="projektipodlista">
+       <a href="projekti.html" class="toggle-podmeni">Projekti</a>
+       <ul class="projekti1">
+        <li><a href="projekat1.html">Oporavak datoteka</a></li>
+        <li><a href="projekat2.html">Čuvanje dokaza</a></li>
+        <li><a href="projekat3.html">Analiza preglednika</a></li>
+       </ul> 
+    </li>
+    
+    <li class="podlista">
+    <a href="blog0.html" class="toggle-podmeni">Blog</a>
+    <ul class="podlista1">
+        <li><a href="blog.html">UTICAJ TEHNOLOGIJE</a></li>
+        <li><a href="blog2.html">DARK WEB</a></li>
+        <li><a href="blog3.html">ŽENE U IT</a></li>
+    </ul>
+    </li>
+    <li><a href="listavjestina.html">Lista vještina</a></li>
+    <li><a href="kontakt.html">Kontakt</a></li>
+</ul>
+</nav>
+   </header>
+
+   <nav class="blog1">
+    <h1 class="naslov">KAKO JE TEHNOLOGIJA PROMIJENILA SVIJET</h1>
+    <p class="blog1tekst">
+        Tehnologija je postala sastavni dio naših života. Od pametnih telefona do pametnih domova, tehnologija je zauzela svaki dio naših života. Bilo da se radi o početku dana s alarmom na telefonu, korištenju Alexe za paljenje ili gašenje svjetla, jedno je jasno:
+        Tehnologija pokreće svijet.
+        Iako je jasno da smo postali ovisni o tehnologiji, obzirom da je tehnologija postala dio svakodnevnog života, postavlja se pitanje: Koliko nam tehnologija zapravo pomaže? 
+    </p>
+
+    <img src="blog1.avif" class="slikablog1">
+
+    <p class="blog1text2">
+        Jedan od najvećih načina na koji je tehnologija transformirala naše živote jeste radno mjesto.
+        U prošlosti, zadaci koji su se ručno rješavali satima ili danima se danas riješe puno brže uz pomoć ručunara.
+        Ovo povećanje učinkovitosti ne samo da je uštedjelo vrijeme, već je i povečalo ukupnu produktivnost.
+        Također, komuniciranje sa ostalim ljudima je postalo mnogo lakse, pomoću e-pošte, trenutnih poruka i video konferencija, olakšava timovima njihovu suradnju.
+        Tehnologija je odigrala ključnu ulogu u području zdravstva, što je dovelo do brojnih napredaka. Tokom godina, doktori i zdravstveni radnici iskoristili su tehnologiju kako bi pacijentima pružili precizne dijagnoze.
+        U području medicinskih istraživanja, tehnologija je također ubrzala otkrivanje novih tretmana i lijekova.
+    </p>
+
+    <img src="planeta.jpg" class="slikablog12">
+
+    <p class="blog1text3">
+        Koliko god da nam je tehnologija pomogla i koliko god vrlina ona ima, toliko ima i mana. U ovom hiperpovezanom digitalnom dobu, jedna od najvećih briga je stalni tok distrakcija koje mogu ozbiljno ometati našu produktivnost.
+        Danas je lakše nego ikad biti ometen od svojih zadataka i izgubiti vrijeme.
+        Privlačnost obavijesti društvenih mreža, beskrajne e-poruke i mnoge druge aplikacije se bore za našu pažnju i tako nas dovode do trajnog stanja prekida.
+        Nije neuobičajeno da se ljudi nađu "zalijepljeni" za svoje ekrane, konstantno listajući beskrajne aplikacije.
+        Pored toga, dok se krećemo digitalnim krajolikom, vrijednost naših ličnih podataka postaje sve manja. 
+        Od online kupovine i interakcija na društvenim mrežama, do medicinskih kartona i finansijskih transakcija, ogromne količine podataka neprestano se dijele i pohranjuju.
+        Ovo je dobro za kompanije koje žele razumjeti ponašanje kupaca i samim tim prilagoditi svoje usluge ili proizvode u skladu s tim.
+
+    </p>
+    <h2 class="naslov2">ZAKLJUČAK</h1>
+
+    <p class="blog1tekst4">
+        Zaključak ovog bloga jeste da je ključ zdravog odnosa s tehnologijom je to da ne dopustimo da tehnologija upravlja nama i dominira našim životom.
+        Tehnologija bi trebala biti alat koji nam pomaže u postizanju naših ciljeva, a da pritom ne postane stalna distrakcija.
+        Da bismo pronašli pravu ravnotežu, bitno je postaviti granice i vježbati sebe u korištenju tehnologije, odnosno redovno uzimati pauze kako se ne bi izgubili u njoj.
+    </p>
+   </nav>
+    </nav>
+   <div class="darkmode1">
+<button id="darkmode">DARK MODE</button>
+<script>
+    const dugme=document.getElementById("darkmode");
+    dugme.onclick=function()
+    {
+        document.body.classList.toggle("dark");
+    };
+</script></div>
+<div class="skroll">
+    <button id="skrolldugme">Vrati</button>
+    <script>
+        const dug=document.getElementById("skrolldugme");
+        window.onscroll=function()
+        {
+            if(window.scrollY>300)
+        {
+            dug.style.display="block";
+        }
+        else
+        {
+            dug.style.display="none";
+        }
+        };
+        dug.onclick=function()
+        {
+            window.scrollTo({
+                top:0,
+                behavior:"smooth"
+            });
+        };
+    </script>
+    <script>
+        const hamburger=document.getElementById("hamburger");
+        const meni=document.querySelector(".meni");
+        hamburger.onclick=function()
+        {
+            meni.classList.toggle("active");
+        };
+    </script>
+</div>
+</body>
+   
+</html>

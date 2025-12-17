@@ -1,0 +1,488 @@
+html, body
+{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+    
+    
+}
+
+body
+{
+    background-image: url(kontaktpozadina.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+html
+{
+    scroll-behavior: smooth;
+}
+
+a
+{
+    color: rgb(196, 66, 192);
+    display: inline-block;
+    padding: 3%;
+    border-radius: 3%;
+    background-color: transparent;
+}
+.meni
+{   width: 80%;
+    margin-right: 17%;
+    margin-left:18%;
+    margin-bottom: 2%;
+}
+.meni ul
+{
+    list-style-type: none;
+    display: flex;
+    gap:10%;
+    padding-top:4%;
+}
+.meni ul li a
+{
+    white-space: nowrap;
+    text-decoration: none;
+    font-size: 140%;
+    padding: 1%;
+    border-radius: 3%;
+    background: transparent;
+    letter-spacing: 0.3vw;
+}
+.meni ul li a:hover
+{
+background-color: rgb(139, 7, 71);
+color:rgb(245, 197, 220) ;
+box-shadow: 16px 15px 32px rgba(0, 0, 0, 0.45);
+border-radius: 5%;
+padding: 1%;
+background: rgba(202, 12, 126, 0.1);
+font-size: 142%;
+transition: 0.35s ease;
+}
+
+
+
+.mail
+{
+    display: inline-flex;
+    align-items: center;
+
+    width: 50px;
+    padding: 10px;
+    margin:0;
+
+    font-size: 40px;
+    color: rgb(245, 197, 220);
+    text-decoration: none;
+    
+    background-color:transparent;
+    overflow: hidden;
+    transition: 0.7s ease;
+}  
+.mailikonica
+{
+    font-size: 40px;
+    color:rgb(186, 24, 78);
+}
+.textemail
+{
+    margin-left: 10px;
+    width: 50%;
+
+    font-size: 20px;
+    color:rgb(186, 24, 78);
+
+    overflow: hidden;
+    white-space: nowrap;
+    transition: opacity 1.7s ease;
+    
+}
+.mail:hover
+{
+    width: 350px;
+    background-color: rgb(129, 28, 80);
+}
+.mail:hover  .textemail
+{
+    opacity: 1;  
+    color:rgb(186, 24, 78);
+}
+.mail:hover .mailikonica
+{
+     color: rgb(186, 24, 78); 
+}
+
+
+
+.glavnimeni
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height:10%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px;
+    box-sizing: border-box;
+
+    background-color:rgb(130, 64, 100, 0.15) ;
+    backdrop-filter: blur(10px);
+
+    z-index: 999;
+   
+   
+}
+.podlista
+{
+    position: relative;
+}
+.podlista1
+{   
+    position:absolute;
+    display: none;
+    flex-direction: column;
+
+    min-width: 180px;
+    padding: 10px 0;
+
+    background-color:transparent;
+    list-style: none;
+    
+    opacity: 0 ;
+}
+.podlista1 li a
+{
+    display:block;
+    padding: 10px 20px;
+    
+    color: blanchedalmond;
+    text-decoration: none;
+}
+.podlista:hover .podlista1 {
+    
+    opacity: 1;
+    background-color: rgba(138, 57, 99, 0.6);
+    margin-top: 30%;
+}
+
+
+
+
+
+.projekti1
+{
+    display: none;
+    position: absolute;
+    flex-direction: column;
+
+    padding: 3px 2px;
+    min-height: 120px;
+    width: 270px;
+
+    list-style-type: none;
+    background-color: transparent;
+
+    opacity: 0;
+}
+.projektipodlista
+{
+    position: relative;
+}
+.projekti1 li a
+{
+    display: block;
+    padding: 30px 20px;
+    color: blanchedalmond ;
+}
+.projektipodlista:hover .projekti1
+{
+    opacity: 1;
+    background-color:rgba(138, 57, 99, 0.6) ;
+    margin-top: 18%;
+   
+}
+
+
+
+
+
+
+
+.kontakt
+{
+    background-color: rgba(209, 124, 168, 0.366);
+    text-align: center;
+    width: 40%;
+    height: 80%;
+    display: block;
+    margin: 7% auto 0 auto;
+    padding-top: 1%;
+    
+}
+.kontaktpodaci
+{
+    text-align: left;
+    color: rgb(46, 4, 28);
+    font-size: 25px;
+    line-height: 0.8;
+}
+.naslov, .naslov2
+{
+    font-size: 50px;
+    margin-left: 2%;
+    margin-top: 2%;
+    color: rgb(91, 6, 47);
+    font-family: 'Allura', cursive;
+}
+
+.forma2
+{
+    text-align: center;
+    color: rgb(46, 4, 28);
+    font-size: 25px;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea
+{
+    background-color: rgba(251, 130, 201, 0.304);
+    border: 1px solid rgb(36, 7, 25);
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+}
+.dugmeposalji
+{
+    margin: 2% 40%;
+    padding: 2% 0;
+    background-color: rgb(186, 93, 144);
+    color:  rgb(91, 6, 47);
+    font-size: 30px;
+    font-family:'Allura', cursive;
+    border: 1px solid rgb(36, 7, 25);
+}
+
+
+
+
+
+body.dark a
+{
+    color:rgb(229, 149, 227)
+    
+}
+.darkmode1
+{
+    position: fixed;
+    bottom: 20px;
+    z-index: 999;
+    left:5px;
+    
+}
+body.dark .meni ul li a:hover
+{
+background: rgb(48, 4, 30);
+background-color: rgba(144, 30, 85, 0.938);
+color:rgb(242, 182, 211) ;
+}
+body.dark .glavnimeni
+{
+    background-color: rgb(57, 3, 23);
+}
+body.dark input, body.dark textarea
+{
+    background-color: rgb(47, 3, 21);
+}
+
+#darkmode
+{
+    color: black;
+    background-color: rgb(41, 7, 26);
+    border-radius: 6px;
+    border: 1px solid black;
+}
+
+
+
+
+
+
+#skrolldugme
+{
+    position: fixed;
+    bottom: 60px;
+    display: none;
+    z-index: 999;
+     left:5px;
+     padding: 5px 15px;
+     color: black;
+    background-color: rgba(41, 7, 26, 0.173);
+     border-radius: 6px;
+    border: 1px solid black;
+}
+.hamburger
+{
+    display: none;
+    font-size: 30px;
+    color: rgb(92, 7, 61);
+    cursor: pointer;
+}
+
+
+@media screen and (max-width:900px) {
+    .meni {
+        position: absolute;
+        display: none;
+        width: 60%;
+        top: 60px;
+        right: 0;
+        flex-direction: column;
+        background-color: rgba(69, 4, 39, 0.25);
+        padding: 1rem;
+        z-index: 999;
+    }
+
+    .meni.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        font-size: 2rem;
+        color: rgb(92, 7, 61);
+        z-index: 1000;
+    }
+
+    .meni .items {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+
+    .meni .items li {
+        width: 100%;
+    }
+
+    .meni .items li a {
+        display: block;
+        padding: 0.6rem 0;
+        font-size: 1.1rem;
+    }
+
+    .projektipodlista:hover .projekti1,
+    .podlista:hover .podlista1,
+    .projekti1,
+    .podlista1 {
+        display: none !important;
+        visibility: hidden;
+        overflow: hidden;
+    }
+
+    .kontakt {
+        width: 90%;
+        margin-top: 20%;
+        background-size: cover;
+    }
+
+    input, textarea, .dugmeposalji {
+        width: 80%;
+        font-size: 20px;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .naslov, .naslov2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+}
+
+
+@media screen and (max-width:600px)
+{
+   
+    .meni
+    { 
+        position: absolute;
+        display: none;
+
+        width: 50%;
+        top: 100%;
+        right: 0%;
+        margin: 0;
+    }
+    .meni.active
+    {
+        display: block;
+    }
+    header
+    {
+        position: relative;
+    }
+   .hamburger
+   {
+    display: block;
+   }
+   .meni .items
+   {
+    flex-direction: column;
+    gap: 0.5rem;
+    background-color: rgba(69, 4, 39, 0.307);
+    padding: 1rem;
+   }
+   .meni .items li
+   {
+    width: 100%;
+   }
+   .meni .items li a
+   {
+    display: block;
+    padding: 0.5rem 0;
+   }
+     .projektipodlista:hover .projekti1, .podlista:hover .podlista1
+   {
+    display:none !important;
+   }
+  .projekti1, .podlista1
+  {
+    display: none !important;
+    visibility: hidden;
+    overflow: hidden;
+  }
+
+
+
+
+
+   .kontakt
+   {
+    width: 90%;
+    height: auto;
+    margin-top: 5%;
+   }
+
+   input, textarea, .dugmeposalji
+   {
+    width: 80%;
+    font-size: 20px;
+    margin: 0 auto;
+   }
+   .naslov, .naslov2
+   {
+    font-size: 2rem;
+    text-align: center;
+   }
+   .kontakt
+   {
+    background-size: cover;
+   }
+}

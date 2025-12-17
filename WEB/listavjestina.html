@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="listavjestina.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Allura&family=Great+Vibes&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Allura&family=Great+Vibes&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Allura&family=Great+Vibes&family=Quicksand:wght@300..700&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>O meni</title>
+</head>
+<body>
+     <header class="glavnimeni">
+     <a href="mailto:ajsaajanovic44@gmail.com" class="mail">
+    <span class="mailikonica">
+        <i class="fa-solid fa-envelope"></i></span>
+    <span class="textemail">ajsa.ajanovic</span>
+   </a>
+    <div class="hamburger" id="hamburger">
+    <i class="fa-solid fa-bars"></i>
+  </div>  
+<nav class="meni">
+<ul class="items">
+    <li><a href="POCETNA.html">Početna</a></li>
+    <li><a href="omeni.html">O meni</a></li>
+    <li class="projektipodlista">
+       <a href="projekti.html">Projekti</a>
+       <ul class="projekti1">
+        <li><a href="projekat1.html">Oporavak datoteka</a></li>
+        <li><a href="projekat2.html">Čuvanje dokaza</a></li>
+        <li><a href="projekat3.html">Analiza preglednika</a></li>
+       </ul> 
+    </li>
+    
+    <li class="podlista">
+    <a href="blog0.html">Blog</a>
+    <ul class="podlista1">
+        <li><a href="blog.html">UTICAJ TEHNOLOGIJE</a></li>
+        <li><a href="blog2.html">DARK WEB</a></li>
+        <li><a href="blog3.html">ŽENE U IT</a></li>
+    </ul>
+    </li>
+    <li><a href="listavjestina.html">Lista vještina</a></li>
+    <li><a href="kontakt.html">Kontakt</a></li>
+</ul>
+</nav>
+   </header>
+   <div class="vjestine2">
+<div class="vjestine">
+    <div class="vj1">
+<span>HTML</span>
+<div class="progressbar">
+    <div class="popunjavanje html"></div>
+</div>
+    </div>
+        <div class="vj1">
+<span>CSS</span>
+<div class="progressbar">
+    <div class="popunjavanje css"></div>
+</div>
+    </div>
+        <div class="vj1">
+<span>JAVASCRIPT</span>
+<div class="progressbar">
+    <div class="popunjavanje java"></div>
+</div>
+    </div>
+        <div class="vj1">
+<span>PYTHON</span>
+<div class="progressbar">
+    <div class="popunjavanje pyton"></div>
+</div>
+    </div>
+</div>
+
+<div class="tekstvjestine">
+    <ul class="lista">
+        <li> <span class="material-icons ikona">search</span> Fokus na vizuelno čiste i pregledne stranice</li>
+        <li><span class="material-icons ikona">add_alert</span>Posebna pažnja na hover efekte i animacije</li>
+        <li><span class="material-icons ikona">phone_iphone</span>  Mobile-first pristup dizajnu</li>
+    </ul>
+</div>
+</div>
+<div class="galerija">
+      
+    <img id="slika" src="galerija1.jpg" alt="galerija">
+    <div class="dugmad">
+        <button onclick="prethodna()"><</button>
+        <button onclick="sljedeca()">></button>
+    </div>
+
+<script>
+    const slike=["galerija1.jpg","galerija2.png","galerija3.jpg","galerija4.jpg","galerija5.jpg"]
+let index=0;
+function sljedeca()
+{
+    index++;
+    if(index>=slike.length)
+{
+    index=0;
+}
+document.getElementById("slika").src=slike[index];
+}
+
+function prethodna()
+{
+    index--;
+    if(index<0)
+{
+    index=slike.length-1;
+}
+document.getElementById("slika").src=slike[index];
+}
+
+</script>
+</div>
+   </nav>
+   <div class="darkmode1">
+<button id="darkmode">DARK MODE</button>
+<script>
+    const dugme=document.getElementById("darkmode");
+    dugme.onclick=function()
+    {
+        document.body.classList.toggle("dark");
+    };
+</script></div>
+<div class="skroll">
+    <button id="skrolldugme">Vrati</button>
+    <script>
+        const dug=document.getElementById("skrolldugme");
+        window.onscroll=function()
+        {
+            if(window.scrollY>300)
+        {
+            dug.style.display="block";
+        }
+        else
+        {
+            dug.style.display="none";
+        }
+        };
+        dug.onclick=function()
+        {
+            window.scrollTo({
+                top:0,
+                behavior:"smooth"
+            });
+        };
+    </script>
+    <script>
+        const hamburger=document.getElementById("hamburger");
+        const meni=document.querySelector(".meni");
+        hamburger.onclick=function()
+        {
+            meni.classList.toggle("active");
+        };
+    </script>
+</div>
+  </body>
+  </html>

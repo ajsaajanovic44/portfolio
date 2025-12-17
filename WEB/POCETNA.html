@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pocetna1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Allura&family=Great+Vibes&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Allura&family=Great+Vibes&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Allura&family=Amatic+SC:wght@400;700&family=Charm:wght@400;700&family=Great+Vibes&family=Quicksand:wght@300..700&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+
+<title>Document</title>
+</head>
+<body>
+   <header class="glavnimeni">
+    <a href="mailto:ajsaajanovic44@gmail.com" class="mail">
+    <span class="mailikonica">
+        <i class="fa-solid fa-envelope"></i></span>
+    <span class="textemail">ajsa.ajanovic</span>
+    </a>
+
+  <div class="hamburger" id="hamburger">
+    <i class="fa-solid fa-bars"></i>
+  </div>  
+<nav class="meni">
+<ul class="items">
+    <li><a href="POCETNA.html">Početna</a></li>
+    <li><a href="omeni.html">O meni</a></li>
+    <li class="projektipodlista">
+       <a href="projekti.html" class="toggle-podmeni">Projekti</a>
+       <ul class="projekti1">
+        <li><a href="projekat1.html">Oporavak datoteka</a></li>
+        <li><a href="projekat2.html">Čuvanje dokaza</a></li>
+        <li><a href="projekat3.html">Analiza preglednika</a></li>
+       </ul> 
+    </li>
+    
+    <li class="podlista">
+    <a href="blog0.html" class="toggle-podmeni">Blog</a>
+    <ul class="podlista1">
+        <li><a href="blog.html">UTICAJ TEHNOLOGIJE</a></li>
+        <li><a href="blog2.html">DARK WEB</a></li>
+        <li><a href="blog3.html">ŽENE U IT</a></li>
+    </ul>
+    </li>
+    <li><a href="listavjestina.html">Lista vještina</a></li>
+    <li><a href="kontakt.html">Kontakt</a></li>
+</ul>
+</nav>
+   </header>
+   
+   <div class="centralni">
+
+   <div class="ime-wrapper">
+
+<div class="ime">
+Ajša Ajanović
+</div>
+
+<div class="podtext">Digitalni forenzičar-tragovi koji vode ka pravdi</div>
+</div>
+<div class="dugmejedan">
+    <a href="#saznajvise" class="dugme">Saznaj više</a>
+</div>
+  </div>
+
+  <section class="saznajvise" id="saznajvise">
+<div class="tex">
+    <p>Završila sam Prirodno-matematički fakultet u Sarajevu, smjer Kompjuterske nauke, gdje sam izgradila snažnu osnovu iz algoritama,
+sistema i analize podataka. Danas se bavim digitalnom forenzikom, fokusirana na analizu digitalnih tragova, 
+prepoznavanje cyber-kriminalnih obrazaca i etičko rukovanje digitalnim dokazima. 
+Svoj rad temeljim na preciznosti, odgovornosti i kontinuiranom usavršavanju u oblasti digitalne sigurnosti.</p></div>
+</section>
+<div class="darkmode1">
+<button id="darkmode">DARK MODE</button>
+<script>
+    const dugme=document.getElementById("darkmode");
+    dugme.onclick=function()
+    {
+        document.body.classList.toggle("dark");
+    };
+</script></div>
+
+<div class="skroll">
+    <button id="skrolldugme">Vrati</button>
+    <script>
+        const dug=document.getElementById("skrolldugme");
+        window.onscroll=function()
+        {
+            if(window.scrollY>300)
+        {
+            dug.style.display="block";
+        }
+        else
+        {
+            dug.style.display="none";
+        }
+        };
+        dug.onclick=function()
+        {
+            window.scrollTo({
+                top:0,
+                behavior:"smooth"
+            });
+        };
+    </script>
+    <div class="hamburger"></div>
+    <script>
+        const hamburger=document.getElementById("hamburger");
+        const meni=document.querySelector(".meni");
+        hamburger.onclick=function()
+        {
+            meni.classList.toggle("active");
+        };
+    </script>
+</div>
+</body>
+</html> 
